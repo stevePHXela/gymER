@@ -1,0 +1,129 @@
+@media (min-width: 57.5rem) {
+    .menu-nav {
+        display: none;
+    }
+
+    .primary-nav__logo-wrapper {
+        margin-left: 3em;
+    }
+
+    .primary-nav__list {
+        all: unset;
+        @include flexCenter(row);
+        list-style: none;
+        margin-right: 3em;
+        transition: all ease-in-out 300ms;
+
+        &--item {
+            a {
+                font-size: 1.25rem;
+                padding: 0 .3em;
+            }
+        }
+    }
+        
+    .main-header__container {
+        flex-direction: row;
+        border: none;
+
+        &--info {
+            border-bottom: none;
+            border-right: $border;
+
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    main article, .content, .main-header {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    .exercises {
+        &__container {
+            flex-direction: row;
+
+            &--text {
+                padding: 0 2em;
+            }
+
+            &--video {
+                width: 100%;
+                padding: 2em;
+                border-bottom: none;
+                border-left: $border;
+            }
+        }
+    }
+
+    .flex-revers {
+        flex-direction: row-reverse;
+        &__child {
+            border-right: $border;
+            border-left: none;
+        }
+    }
+
+    .content {
+
+        &__wrapper {
+            &--social {
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+                &--picture {
+                    flex-direction: row;
+                }
+        }
+    }
+
+    .footer {
+        padding: 1em;
+        flex-direction: row;
+
+        div:not(:first-child) {
+            border-left: $border;
+            border-top: none;
+        }
+
+        ul {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width: 80rem) {
+    .primary-nav__list {
+        a {
+            font-size: 1.5rem;
+        }
+    }
+
+    .main-header__container--info {
+        li {
+            font-size: 1.8rem;
+        }
+    }
+
+    .hero__main {
+        max-width: 70ch;
+        align-items: flex-start;
+        margin-left: 4em;
+        text-align: left;
+        
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        a {
+            font-size: 1.8rem;
+        }
+    }
+}
