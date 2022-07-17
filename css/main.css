@@ -216,7 +216,7 @@ p {
 .hero {
   overflow-x: hidden;
   height: 100vh;
-  background: url(/images/gym-bg.jpg);
+  background: url(../images/gym-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
